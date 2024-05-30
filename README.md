@@ -17,8 +17,8 @@ entries or you can split up the filament object into multiple ones.
 
 | Field                   | Description                                                                                                                                               |
 | ----------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `name`                  | The product name. Should probably contain the format code `{color_name}` to automatically insert the color name.                                          |
-| `material`              | The material name, e.g., PLA.                                                                                                                             |
+| `name`                  | The product name. Should contain the format code `{color_name}` to automatically insert the color name.                                                   |
+| `material`              | The material name.                                                                                                                                        |
 | `density`               | The density of the material in g/cm³.                                                                                                                     |
 | `weights`               | An array of objects with `weight`, `spool_weight`, and `spool_type` fields. Specify multiple if the manufacturer sells the filament in different weights. |
 | `diameters`             | An array of diameters in mm. Specify multiple if the manufacturer sells the filament in different diameters.                                              |
@@ -31,11 +31,37 @@ entries or you can split up the filament object into multiple ones.
 | `glow`                  | *(optional)* Boolean true/false if this filament has a glow-in-the-dark effect.                                                                           |
 | `colors`                | An array of objects with `name` and `hex` fields. Name should be what the manufacturer calls it. Hex should be the hex code of the color.                 |
 
+<details>
+<summary>Examples</summary>
+
+for futher example take a look at the JSONS in the filaments folder!
+
+| Field                   | Example                                                             |
+| ----------------------- | ------------------------------------------------------------------- |
+| `manufacturer`          | `Formfutura`                                                        |
+| `name`                  | `EasyFil {color_name}`                                              |
+| `material`              | `PLA`                                                               |
+| `density`               | `1.24`                                                              |
+| `weights`               | `{"weight": 250.0,"spool_type": "cardboard","spool_weight": 130.0}` |
+| `diameters`             | `[1.75, 2.85]`                                                      |
+| `extruder_temp`         | `210`                                                               |
+| `extruder_temp_range`   | `[200, 220]`                                                        |
+| `bed_temp`              | `55`                                                                |
+| `bed_temp_range`        | `[50, 60]`                                                          |
+| `finish`                |                                                                     |
+| `multi_color_direction` |                                                                     |
+| `pattern`               |                                                                     |
+| `translucent`           |                                                                     |
+| `glow`                  |                                                                     |
+| `colors`                |                                                                     |
+
+</details>
+
 ## Materials
 
 All materials are found in the `materials.json` file.
 
-### Material file fields 📋
+### Material file fields
 
 | Field           | Description                                     |
 | --------------- | ----------------------------------------------- |
