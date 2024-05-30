@@ -35,9 +35,11 @@ entries or you can split up the filament object into multiple ones.
 
 All materials are found in the `materials.json` file.
 
-### Material file fields
+### Material file fields 📋
 
-* `material` - The material name, e.g. PLA.
-* `density` - The density of the material in g/cm3.
-* `extruder_temp` - General extruder temperature for this material.
-* `bed_temp` - General bed temperature for this material.
+| Field           | Description                                     |
+| --------------- | ----------------------------------------------- |
+| `material`      | The material name, e.g., PLA.                   |
+| `density`       | The density of the material in g/cm³.           |
+| `extruder_temp` | General extruder temperature for this material. |
+| `bed_temp`      | General bed temperature for this material.      |
